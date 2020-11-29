@@ -1,0 +1,211 @@
+ {% load static %}
+    <!-- footer -->
+    <footer class="footer py-md-5 pt-md-3 pb-sm-5">
+        <div class="footer-position">
+            <div class="container">
+                <div class="row newsletter-inner">
+                    <div class="col-md-4 py-3">
+                        <h3 class="w3ls-title text-white">
+                            Qayta qo'ng'iroq qilamiz.</h3>
+                        <p class="text-white">Telefon raqamingizni kiriting va jo'nating</p>
+                    </div>
+                    <div class="col-md-8 newsright">
+                        <form action="#" method="post" class="d-flex">
+                            <input class="form-control" type="email" placeholder="Telefon raqamingizni kiriting" name="email" required="">
+                            <input class="form-control" type="submit" value="Jo'natish">
+                        </form>
+                    </div>
+                    <div class="up-arrow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-lg-5 mt-sm-5">
+            <div class="row p-sm-4 px-3 py-5">
+                <div class="col-lg-4 col-md-6 footer-top mt-lg-0 mt-md-5">
+                    <h2>
+                        <a href="index.html" class="text-theme text-uppercase">
+                            Red Star Med Service
+                        </a>
+                    </h2>
+                    <p class="mt-2"> Ish vaqti soat 7:00 dan soat 17:00 gacha tushlik vaqti soat 12:00 dan soat 13:00 gacha
+                    </p>
+                </div>
+                <div class="col-lg-4  col-md-6 mt-lg-0 mt-5">
+                    <div class=".footerv2-w3ls">
+                        <h3 class="mb-3 w3f_title">Menyu</h3>
+                        <hr>
+                        <ul class="list-agileits">
+                            <li>
+                                <a href="index.html">
+                                    Bosh saxifa
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a href="about.html">
+                                    Klinika xaqida
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a href="gallery.html">
+                                    Galereya
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="services.html">
+                                    xizmatlar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    aloqalar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
+                    <div class="footerv2-w3ls">
+                        <h3 class="mb-3 w3f_title">Aloqalarimiz</h3>
+                        <hr>
+                        <div class="fv3-contact">
+                            <span class="fas fa-envelope-open mr-2"></span>
+                            <p>
+                                <a href="mailto:example@email.com">sulaymonovabdulaziz99999@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="fv3-contact my-2">
+                            <span class="fas fa-phone-volume mr-2"></span>
+                            <p>+998 73 541-85-68</p>
+                        </div>
+                        <div class="fv3-contact">
+                            <span class="fas fa-home mr-2"></span>
+                            <p> Yangi Chorsu ko'chasi 209 № uy</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- //footer bottom -->
+    </footer>
+    <!-- //footer -->
+    <!-- quick contact -->
+    <div class="container">
+        <div class="outer-col">
+            <div class="heading">Online Aloqa</div>
+            <div class="form-col">
+                <form action="#" method="post">
+                    <input type="text" class="form-control" placeholder="Ismingiz" name="Name" id="user-name" required="">
+                    <input type="text" class="form-control" placeholder="Familyangiz" name="Name" id="Email-id" required="">
+                    <input type="number" class="form-control" placeholder="Telefon raqamingiz" name="Name" id="phone-number" required="">
+                    <textarea placeholder="Bizga xabaringiz" class="form-control"></textarea>
+                    <input type="submit" value="Jo'natish" class="btn_apt">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- //quick contact -->
+    <!-- copyright -->
+    <div class="cpy-right text-center">
+        <p>© 2020 Red Star Med Service| Sayt yaratuvchi: <b>Abdulaziz</b>
+            
+        </p>
+    </div>
+    <!-- //copyright -->
+    <!-- js -->
+    <script src="{% static 'js/jquery-2.2.3.min.js' %}"></script>
+    <!-- //js -->
+    <!-- Banner Responsiveslides -->
+    <script src="{% static 'js/responsiveslides.min.js' %}"></script>
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto: false,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!-- //banner responsive slides -->
+    <!-- Flexslider-js for-testimonials -->
+    <script src="{% static 'js/jquery.flexisel.js' %}"></script>
+    <script>
+        $(window).load(function () {
+            $("#flexiselDemo1").flexisel({
+                visibleItems: 1,
+                animationSpeed: 1000,
+                autoPlay: false,
+                autoPlaySpeed: 3000,
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: {
+                    portrait: {
+                        changePoint: 480,
+                        visibleItems: 1
+                    },
+                    landscape: {
+                        changePoint: 640,
+                        visibleItems: 1
+                    },
+                    tablet: {
+                        changePoint: 768,
+                        visibleItems: 1
+                    }
+                }
+            });
+
+        });
+    </script>
+    <!-- //Flexslider-js for-testimonials -->
+    <!-- //fixed quick contact -->
+    <script>
+        $(function () {
+            var hidden = true;
+            $(".heading").click(function () {
+                if (hidden) {
+                    $(this).parent('.outer-col').animate({
+                        bottom: "0"
+                    }, 1200);
+                } else {
+                    $(this).parent('.outer-col').animate({
+                        bottom: "-305px"
+                    }, 1200);
+                }
+                hidden = !hidden;
+            });
+        });
+    </script>
+    <!-- //fixed quick contact -->
+    <!-- start-smooth-scrolling -->
+    <script src="{% static 'js/easing.js '%}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <script src="{% static 'js/SmoothScroll.min.js' %}"></script>
+    <!-- //end-smooth-scrolling -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+
+</html>
